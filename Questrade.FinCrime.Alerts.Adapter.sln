@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A4DB09A2-30F9-48DE-8D67-DEA34C0DD0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{A1BC8517-83E8-485B-9501-6CFCF088F2DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{7B7E4776-1A36-4271-8B14-7855583F44C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "src\Infra\Infra.csproj", "{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "src\Adapter\Adapter.csproj", "{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{047593AB-E12B-48CC-8C8A-E81707450F5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration", "src\Tests\Integration\Integration.csproj", "{8644C087-E5D3-488A-8032-6F91B2B1E8EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit", "src\Tests\Unit\Unit.csproj", "{D3C1CDF7-1A33-4882-A184-828CEA1B3C67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{6B573CB9-C3A1-4849-8FD0-42F2C793B749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{450EEC53-C730-423B-B467-E25616308B2F}"
+	ProjectSection(SolutionItems) = preProject
+		cfg\envvars.yaml = cfg\envvars.yaml
+		cfg\envvars-prod.yaml = cfg\envvars-prod.yaml
+		cfg\envvars-sit.yaml = cfg\envvars-sit.yaml
+		cfg\envvars-uat.yaml = cfg\envvars-uat.yaml
+		cfg\paas.config.yaml = cfg\paas.config.yaml
+		cfg\bigquery.yaml = cfg\bigquery.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{AC7021DD-9992-4132-A6AB-C4D24EDD6A29}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6B318367-5526-4C58-A443-B2CDF0021502}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "editorconfig", "editorconfig", "{3D22BB03-F052-4399-B76F-0ED4E3F88B5B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{CA61E6AE-96F0-4582-BCD4-1BEB0DF0D8D1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{FC36F57D-7F80-47E1-8DB6-58599F442391}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{39E6AA7C-5120-4CCD-B75F-5FE39845CDB1}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bq", "bq", "{9AE86A3B-6922-4D18-83FC-72A784B649BD}"
+	ProjectSection(SolutionItems) = preProject
+		bq\migrations\main.sql = bq\migrations\main.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migrations", "migrations", "{555EA702-C600-4069-86B9-6AC193315F1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "alerts_adapter_dataset", "alerts_adapter_dataset", "{52C20470-E68D-41A5-A5A8-44D2BE2B36A2}"
+	ProjectSection(SolutionItems) = preProject
+		bq\migrations\alerts_adapter_dataset\alerts_adapter_dataset.sql = bq\migrations\alerts_adapter_dataset\alerts_adapter_dataset.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1BC8517-83E8-485B-9501-6CFCF088F2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BC8517-83E8-485B-9501-6CFCF088F2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BC8517-83E8-485B-9501-6CFCF088F2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BC8517-83E8-485B-9501-6CFCF088F2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7E4776-1A36-4271-8B14-7855583F44C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7E4776-1A36-4271-8B14-7855583F44C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7E4776-1A36-4271-8B14-7855583F44C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7E4776-1A36-4271-8B14-7855583F44C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8644C087-E5D3-488A-8032-6F91B2B1E8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8644C087-E5D3-488A-8032-6F91B2B1E8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8644C087-E5D3-488A-8032-6F91B2B1E8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8644C087-E5D3-488A-8032-6F91B2B1E8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C1CDF7-1A33-4882-A184-828CEA1B3C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C1CDF7-1A33-4882-A184-828CEA1B3C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C1CDF7-1A33-4882-A184-828CEA1B3C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C1CDF7-1A33-4882-A184-828CEA1B3C67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1BC8517-83E8-485B-9501-6CFCF088F2DF} = {A4DB09A2-30F9-48DE-8D67-DEA34C0DD0FF}
+		{7B7E4776-1A36-4271-8B14-7855583F44C3} = {A4DB09A2-30F9-48DE-8D67-DEA34C0DD0FF}
+		{1628AE4C-9EB7-465D-B7DB-776D99FF3BB8} = {A4DB09A2-30F9-48DE-8D67-DEA34C0DD0FF}
+		{9A9EE816-E3DA-478D-9E9D-2FEB4CA4673C} = {A4DB09A2-30F9-48DE-8D67-DEA34C0DD0FF}
+		{8644C087-E5D3-488A-8032-6F91B2B1E8EC} = {047593AB-E12B-48CC-8C8A-E81707450F5E}
+		{D3C1CDF7-1A33-4882-A184-828CEA1B3C67} = {047593AB-E12B-48CC-8C8A-E81707450F5E}
+		{450EEC53-C730-423B-B467-E25616308B2F} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{AC7021DD-9992-4132-A6AB-C4D24EDD6A29} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{6B318367-5526-4C58-A443-B2CDF0021502} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{3D22BB03-F052-4399-B76F-0ED4E3F88B5B} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{CA61E6AE-96F0-4582-BCD4-1BEB0DF0D8D1} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{FC36F57D-7F80-47E1-8DB6-58599F442391} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{39E6AA7C-5120-4CCD-B75F-5FE39845CDB1} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{9AE86A3B-6922-4D18-83FC-72A784B649BD} = {6B573CB9-C3A1-4849-8FD0-42F2C793B749}
+		{555EA702-C600-4069-86B9-6AC193315F1C} = {9AE86A3B-6922-4D18-83FC-72A784B649BD}
+		{52C20470-E68D-41A5-A5A8-44D2BE2B36A2} = {555EA702-C600-4069-86B9-6AC193315F1C}
+	EndGlobalSection
+EndGlobal

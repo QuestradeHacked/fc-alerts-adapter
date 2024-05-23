@@ -1,0 +1,32 @@
+service_name: fc-alerts-adapter
+stack: dotnetcore
+owner: tmj
+
+bigquery:
+  enabled: true
+
+notification_channels:
+  - customer-lifecycle-devops
+
+notification_emails:
+  - "questrade-scrumteam-tmj@questrade.com"
+
+pubsubs_to_subscribe:
+  - name: system.financial-crime.temporary-alerts.listener-1.0
+    retryPolicy:
+      maximumBackoff: 60s
+      minimumBackoff: 3s
+
+release_managers:
+  users:
+    - dmohan@questrade.com
+    - igtanure@questrade.com
+    - jhasse@questrade.com
+    - lrogerio@questrade.com
+    - spotasio@questrade.com
+    - wantunes@questrade.com
+
+business_line:
+  name: enterprise
+  product: financial-crime
+  domain: financial-crime

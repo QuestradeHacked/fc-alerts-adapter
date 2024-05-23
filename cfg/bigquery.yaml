@@ -1,0 +1,27 @@
+bigquery:
+  env:
+    sit:
+      datasets:
+        - name: "alerts_adapter_dataset_raw"
+          allowed_services:
+            - name: "fc-alerts-adapter"
+              access_type: "writer"
+            - name: "fc-alerts-adapter"
+              access_type: "reader"
+        - name: "alerts_adapter_dataset_raw_dev"
+      access:
+        writer:
+          - group:qtg-the-minor-league@questrade.com
+          - group:questrade-scrumteam-tmj@questrade.com
+    uat:
+      datasets:
+        - name: "alerts_adapter_dataset_raw"
+          allowed_services:
+            - name: "fc-alerts-adapter"
+              access_type: "writer"
+    prod:
+      datasets:
+        - name: "alerts_adapter_dataset_raw"
+          allowed_services:
+            - name: "fc-alerts-adapter"
+              access_type: "writer"

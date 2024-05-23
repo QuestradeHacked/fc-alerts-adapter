@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rA9TEyDqvJyuJ0EMpnDYs/VnpSMWHvvBT/xcjkPvYTdpE88DKz7i4gHxgnujkU6bJM47LPeZXy2uFn8p3E3m/w==",
+  "success": true,
+  "projectFilePath": "/Users/015756/Documents/Projects/fc-alerts-adapter/src/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/015756/.nuget/packages/system.threading.tasks.extensions/4.5.0/system.threading.tasks.extensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+environment_variables:
+  # Datadog config
+  DD_LOG_LEVEL: info
+
+  # Global log configuration
+  Serilog__MinimumLevel__Default: "Warning"
+
+  # Actimize
+  AlertsAdapter__ActimizeConfiguration__EasyIngestBaseUrl: "https://app-uat.questrade.actimizecloud.com/RCM/api"
+  AlertsAdapter__ActimizeConfiguration__Enable: true
+  AlertsAdapter__ActimizeConfiguration__Retry: 3
+  AlertsAdapter__ActimizeConfiguration__Timeout: 5000
